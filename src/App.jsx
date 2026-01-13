@@ -1,6 +1,6 @@
 import "../src/App.css";
 import { useState, useEffect } from "react";
-import Navbar from "./navbar";
+import Navbar from "./Navbar";
 import profileImage from "./images/image.jpg";
 import AboutSection from "./AboutSection";
 import TestimonialSection from "./TestimonialSection";
