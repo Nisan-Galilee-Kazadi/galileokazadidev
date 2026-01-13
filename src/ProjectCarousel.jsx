@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Alsquare from "./images/alsquare.png";
+import Alsquare from "./images/Alsquare.png";
 import AcceuilEcole from "./images/acceuilecole.png";
 import Agency from "./images/agency.png";
 import Hik from "./images/hik.png";
