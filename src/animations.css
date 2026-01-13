@@ -1,0 +1,32 @@
+/* Animations pour le défilement infini */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% / 2));
+  }
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(calc(-100% / 2));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left var(--speed, 40s) linear infinite;
+}
+
+.animate-scroll-right {
+  animation: scroll-right var(--speed, 40s) linear infinite;
+}
+
+/* Pause l'animation au survol pour une meilleure expérience utilisateur */
+.animate-scroll-left:hover,
+.animate-scroll-right:hover {
+  animation-play-state: paused;
+}
