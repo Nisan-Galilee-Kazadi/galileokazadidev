@@ -7,12 +7,12 @@ import Html from "./images/html.png";
 import Css from "./images/css.png";
 import Javascript from "./images/javascript.png";
 import React from "./images/react.png";
-import Tailwind from "../src/images/tailwindcss.png";
-import Node from "../src/images/nodejs.png";
-import MongoDB from "../src/images/mongoDB.png";
-import Postgres from "../src/images/Postgresql.png";
-import Mysql from "../src/images/mysql.png";
-import ZohoMail from "../src/images/Zoho-mail.png";
+import Tailwind from "./images/tailwindcss.png";
+import Node from "./images/nodejs.png";
+import MongoDB from "./images/mongodb.png";
+import Postgres from "./images/postgresql.png";
+import Mysql from "./images/mysql.png";
+import ZohoMail from "./images/Zoho-Mail.png";
 
 const StackCard = ({ children }) => {
   return (
