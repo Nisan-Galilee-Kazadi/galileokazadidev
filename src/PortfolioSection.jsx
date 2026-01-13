@@ -11,7 +11,7 @@ import AcceuilEcole from "./images/acceuilecole.png";
 import Agency from "./images/agency.png";
 import Hik from "./images/hik.png";
 import KengelApp from "./images/kengelapp.png";
-import Alsquare from "./images/alsquare.png";
+import Alsquare from "./images/Alsquare.png";
 import Portfolio from "./images/porfolio2.png";
 import KatGlamour from "./images/katglamour.png";
 import ProjectCarousel from "./ProjectCarousel";
