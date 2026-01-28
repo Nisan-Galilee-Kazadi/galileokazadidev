@@ -9,7 +9,7 @@ import EvaneLesnar from "./images/portfolioEvane.png";
 import Betterlife from "./images/betterlifeImage.jpg";
 // Les images suivantes doivent être déplacées dans le dossier public
 import NamsterImg from "./images/Namster.png";
-import namsterPrim from "./images/NamsterPrim.png";
+import namsterPrim from "./images/namsterPrim.png";
 import AssistTrackerImg from "/assistTracker.png";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
