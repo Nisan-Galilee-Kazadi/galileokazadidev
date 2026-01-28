@@ -13,6 +13,10 @@ import MongoDB from "./images/mongodb.png";
 import Postgres from "./images/postgresql.png";
 import Mysql from "./images/mysql.png";
 import ZohoMail from "./images/Zoho-Mail.png";
+import github from "./images/github.jpg";
+import cpanel from "./images/cpanel.png";
+import netlify from "./images/netlify.png";
+import vercel from "./images/vercel.png";
 
 const StackCard = ({ children }) => {
   return (
@@ -59,6 +63,11 @@ const SkillSection = ({ darkMode }) => {
     { name: 'PostgreSQL', icon: Postgres },
     { name: 'MySQL', icon: Mysql },
     { name: 'Zoho Mail', icon: ZohoMail },
+    { name: 'GitHub', icon: github },
+    { name: 'Vercel', icon: vercel },
+    { name: 'Netlify', icon: netlify },
+    { name: 'Cpanel', icon: cpanel },
+    { name: 'Resend', icon: ZohoMail },
   ];
   
   // Dupliquer les stacks pour un défilement plus fluide

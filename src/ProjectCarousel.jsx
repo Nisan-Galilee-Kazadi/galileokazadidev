@@ -9,6 +9,7 @@ import EvaneLesnar from "./images/portfolioEvane.png";
 import Betterlife from "./images/betterlifeImage.jpg";
 // Les images suivantes doivent être déplacées dans le dossier public
 import NamsterImg from "./images/Namster.png";
+import namsterPrim from "./images/NamsterPrim.png";
 import AssistTrackerImg from "/assistTracker.png";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -87,6 +88,13 @@ const projects = [
     link: "https://betterlife-ong.netlify.app",
     description:
       "Le site Officiel d'un organisme internationale de production et securité alimentaire.",
+  },
+  {
+    title: "Namster Premium",
+    image: namsterPrim,
+    link: "https://namster.netlify.app",
+    description:
+      "Namster automatise l'ajout des noms sur les invitations. Téléversez votre modèle, importez une liste de noms et générez en masse des invitations personnalisées, prêtes à l'impression en quelques secondes.",
   },
 ];
 
