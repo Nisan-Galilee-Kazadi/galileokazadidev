@@ -60,15 +60,15 @@ const SkillSection = ({ darkMode }) => {
     { name: 'React', icon: React },
     { name: 'Tailwind', icon: Tailwind },
     { name: 'Node.js', icon: Node },
+    { name: 'GitHub', icon: github },
     { name: 'MongoDB', icon: MongoDB },
     { name: 'PostgreSQL', icon: Postgres },
     { name: 'MySQL', icon: Mysql },
-    { name: 'Zoho Mail', icon: ZohoMail },
-    { name: 'GitHub', icon: github },
-    { name: 'Vercel', icon: vercel },
-    { name: 'Netlify', icon: netlify },
     { name: 'Cpanel', icon: cpanel },
+    { name: 'Vercel', icon: vercel },
     { name: 'render', icon: render },
+    { name: 'Netlify', icon: netlify },
+    { name: 'Zoho Mail', icon: ZohoMail },
   ];
   
   // Dupliquer les stacks pour un défilement plus fluide
