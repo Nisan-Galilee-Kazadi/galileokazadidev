@@ -17,6 +17,7 @@ import github from "./images/github.jpg";
 import cpanel from "./images/cpanel.png";
 import netlify from "./images/netlify.png";
 import vercel from "./images/vercel.png";
+import render from "./images/render.png";
 
 const StackCard = ({ children }) => {
   return (
@@ -67,7 +68,7 @@ const SkillSection = ({ darkMode }) => {
     { name: 'Vercel', icon: vercel },
     { name: 'Netlify', icon: netlify },
     { name: 'Cpanel', icon: cpanel },
-    { name: 'Resend', icon: ZohoMail },
+    { name: 'render', icon: render },
   ];
   
   // Dupliquer les stacks pour un défilement plus fluide
