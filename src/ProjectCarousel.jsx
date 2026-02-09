@@ -11,6 +11,9 @@ import Betterlife from "./images/betterlifeImage.jpg";
 import NamsterImg from "./images/Namster.png";
 import namsterPrim from "./images/namsterPrim.png";
 import AssistTrackerImg from "/assistTracker.png";
+import TRCImg from "./images/TRC.png";
+import ShekPortfolioImg from "./images/Shek portfolio.png";
+import JBREImg from "./images/JBR.png";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
@@ -20,18 +23,18 @@ import "swiper/css/navigation";
 
 const projects = [
   {
-    title: "Formations et Service ",
+    title: "Alsquare Expertise",
     image: Alsquare,
     link: "https://alsquareexpertise.org",
     description:
-      "Pour ce premier projet, j'ai conçu un site vitrine dédié à la présentation d'une école en ligne...",
+      "Plateforme complète de formations professionnelles et de services digitaux. Alsquare Expertise offre des cours certifiants en développement web, design UX/UI, et marketing digital, accompagnés de services de consultation personnalisée pour les entreprises.",
   },
   {
-    title: "Ecole en ligne",
+    title: "CICAF École",
     image: AcceuilEcole,
     link: "https://cicafecole.netlify.app",
     description:
-      "Le deuxième projet consistait à développer une application métier complète pour la gestion interne de l'école...",
+      "Application métier complète pour la gestion scolaire de CICAF. Système intégré avec gestion des étudiants, notes, emploi du temps, communication parents-enseignants, et tableau de bord administratif pour un suivi pédagogique efficace.",
   },
   {
     title: "E-commerce",
@@ -69,6 +72,13 @@ const projects = [
       "Namster automatise l'ajout des noms sur les invitations. Téléversez votre modèle, importez une liste de noms et générez en masse des invitations personnalisées, prêtes à l'impression en quelques secondes.",
   },
   {
+    title: "Namster Premium",
+    image: namsterPrim,
+    link: "https://namster.netlify.app",
+    description:
+      "Version premium de Namster avec fonctionnalités avancées : templates personnalisables, intégration API, traitement par lots illimité, et support prioritaire pour les événements de grande envergure.",
+  },
+  {
     title: "AssistTracker",
     image: AssistTrackerImg,
     link: "https://assisttracker.netlify.app",
@@ -90,11 +100,25 @@ const projects = [
       "Le site Officiel d'un organisme internationale de production et securité alimentaire.",
   },
   {
-    title: "Namster Premium",
-    image: namsterPrim,
-    link: "https://namster.netlify.app",
+    title: "Jeune Ballon Rêves",
+    image: JBREImg,
+    link: "https://jeuneballonreves.netlify.app/",
     description:
-      "Namster automatise l'ajout des noms sur les invitations. Téléversez votre modèle, importez une liste de noms et générez en masse des invitations personnalisées, prêtes à l'impression en quelques secondes.",
+      "Une plateforme dédiée à la promotion et au développement du jeune talent footballistique. JBR accompagne les jeunes athlètes dans leur parcours professionnel avec des programmes de formation, de suivi et d'opportunités de carrière.",
+  },
+  {
+    title: "Talent RDC Connect",
+    image: TRCImg,
+    link: "https://talentrdcconnect.netlify.app/",
+    description:
+      "Talent RDC Connect est une plateforme innovante qui met en relation les talents congolais avec les opportunités professionnelles. Un pont entre les compétences locales et les besoins du marché mondial.",
+  },
+  {
+    title: "Shek Mployi Portfolio",
+    image: ShekPortfolioImg,
+    link: "https://shekmpoyi.netlify.app",
+    description:
+      "Portfolio professionnel présentant l'univers créatif et les réalisations de Shek Mployi. Une vitrine élégante mettant en valeur son expertise artistique et sa vision unique du design.",
   },
 ];
 
