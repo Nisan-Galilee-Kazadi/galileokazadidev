@@ -54,7 +54,7 @@ const useCounter = (end, duration = 2000, start = 0) => {
   return { count, ref };
 };
 import Navbar from "./Navbar";
-import profileImage from "./images/image.jpg";
+import profileImage from "./images/image.webp";
 import AboutSection from "./AboutSection";
 import TestimonialSection from "./TestimonialSection";
 import ServiceSection from "./ServiceSection";

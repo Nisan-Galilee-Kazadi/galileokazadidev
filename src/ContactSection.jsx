@@ -93,7 +93,16 @@ function ContactSection({ darkMode }) {
             </p>
           </div> */}
         </div>
-        <div className="w-full pt-0 md:pt-0 flex-1 flex items-center justify-center">
+        <div className="w-full pt-0 md:pt-0 flex-1 flex items-center justify-center relative">
+          {/* Multiple animated icons for desktop */}
+          <div className="hidden md:block absolute -left-32 top-1/2 transform -translate-y-1/2 space-y-8">
+            <div className="flex flex-col items-center space-y-6">
+              <i className="fas fa-envelope-open-text text-5xl text-[#c9f31d] animate-spin-zoom"></i>
+              <i className="fas fa-phone-alt text-4xl text-[#c9f31d] animate-spin-zoom-delayed"></i>
+              <i className="fas fa-paper-plane text-4xl text-[#c9f31d] animate-spin-zoom-reverse"></i>
+              <i className="fas fa-comments text-3xl text-[#c9f31d] animate-spin-zoom"></i>
+            </div>
+          </div>
           <form
             ref={formRef}
             onSubmit={handleSubmit}

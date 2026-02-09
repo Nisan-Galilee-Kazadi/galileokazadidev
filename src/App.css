@@ -4,3 +4,70 @@
 
 /* Footer custom styles (en complément de Tailwind) */
 
+/* Animated spinning and zooming icon */
+@keyframes spin-zoom {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(90deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+  }
+  75% {
+    transform: rotate(270deg) scale(0.8);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes spin-zoom-delayed {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(-90deg) scale(0.9);
+  }
+  50% {
+    transform: rotate(-180deg) scale(1.1);
+  }
+  75% {
+    transform: rotate(-270deg) scale(0.8);
+  }
+  100% {
+    transform: rotate(-360deg) scale(1);
+  }
+}
+
+@keyframes spin-zoom-reverse {
+  0% {
+    transform: rotate(360deg) scale(1);
+  }
+  25% {
+    transform: rotate(270deg) scale(1.3);
+  }
+  50% {
+    transform: rotate(180deg) scale(0.9);
+  }
+  75% {
+    transform: rotate(90deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.animate-spin-zoom {
+  animation: spin-zoom 3s ease-in-out infinite;
+}
+
+.animate-spin-zoom-delayed {
+  animation: spin-zoom-delayed 4s ease-in-out infinite;
+}
+
+.animate-spin-zoom-reverse {
+  animation: spin-zoom-reverse 3.5s ease-in-out infinite;
+}
+

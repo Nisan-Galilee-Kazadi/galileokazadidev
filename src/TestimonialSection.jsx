@@ -2,9 +2,9 @@ import { IntroText, Section, SubTitle, CoverText, Button } from "./App";
 import "../src/App.css";
 import { P, Span } from "./ui";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import BigIcon from "./images/big-icon.png";
-import Katcoment from "./images/katcomment.jpg"
-import EvaneImage from "./images/EvanelesnarImage.jpg"
+import BigIcon from "./images/big-icon.webp";
+import Katcomment from "./images/katcomment.webp"
+import EvanelesnarImage from "./images/EvanelesnarImage.webp"
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
@@ -17,13 +17,13 @@ const testimonials = [
   {
     name: "Evane Lesnar Bukasa",
     role: "Artiste Humoriste",
-    img: EvaneImage,
+    img: EvanelesnarImage,
     text: "Nissan Galieo m'a permis d'avoir un portfolio, qui me permet maintenant d'avoir quelque chose qui retrace ma carrière humoristique du début jusqu'à maintenant et au-delà de ça je peux y mettre toutes les informations nécessaires concernant mes activités à venir. Grâce à ça, quelqu'un peut se faire une idée de qui je suis en tant qu'humoriste et connaître mon programme, mieux encore se procurer des billets pour mes événements. Je lui suis très reconnaissant et je recommande ses services à n'importe qui, qui voudrait se professionnaliser dans son domaine.",
   },
   {
     name: "Rosette Kajinda Tshilenge",
     role: "CEO Kat Glamour",
-    img: Katcoment,
+    img: Katcomment,
     text: "Grâce à la création de mon site web, j’ai aujourd’hui une plateforme claire, pratique et parfaitement adaptée à mon activité Il m’a permis de mieux organiser mon entreprise et surtout de faciliter les réservations pour mes clientes, ce qui a considérablement amélioré mon quotidien.L’écoute, la compréhension de mes besoins et le professionnalisme ont fait toute la différence.Je recommande ce service sans hésitation.",
   },
   // Ajoute d'autres témoignages ici si besoin
@@ -98,7 +98,7 @@ function TestimonialSection({ darkMode }) {
                   <img
                     src={t.img}
                     alt="client"
-                    className="w-24 h-24 rounded-full border-2 border-[#c9f31d] object-cover"
+                    className="w-32 h-32 md:w-40 md:h-40 rounded-full border-3 border-[#c9f31d] object-cover shadow-lg hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <p className="text-center text-base md:text-lg mb-4">

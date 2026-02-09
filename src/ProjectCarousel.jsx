@@ -1,19 +1,19 @@
 import React, { useState } from "react";
-import Alsquare from "./images/Alsquare.png";
-import AcceuilEcole from "./images/acceuilecole.png";
-import Agency from "./images/agency.png";
-import Hik from "./images/hik.png";
-import PortfolioImg from "./images/porfolio4.jpg";
-import KatGlamour from "./images/katglamours.jpg";
-import EvaneLesnar from "./images/portfolioEvane.png";
-import Betterlife from "./images/betterlifeImage.jpg";
+import Alsquare from "./images/Alsquare.webp";
+import Acceuilecole from "./images/acceuilecole.webp";
+import Agency from "./images/agency.webp";
+import Hik from "./images/hik.webp";
+import Porfolio4 from "./images/porfolio4.webp";
+import Katglamours from "./images/katglamours.webp";
+import PortfolioEvane from "./images/portfolioEvane.webp";
+import BetterlifeImage from "./images/betterlifeImage.webp";
 // Les images suivantes doivent être déplacées dans le dossier public
-import NamsterImg from "./images/Namster.png";
-import namsterPrim from "./images/namsterPrim.png";
+import Namster from "./images/Namster.webp";
+import NamsterPrim from "./images/namsterPrim.webp";
 import AssistTrackerImg from "/assistTracker.png";
-import TRCImg from "./images/TRC.png";
-import ShekPortfolioImg from "./images/Shek portfolio.png";
-import JBREImg from "./images/JBR.png";
+import TRC from "./images/TRC.webp";
+import ShekPortfolio from "./images/Shek portfolio.webp";
+import JBR from "./images/JBR.webp";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
@@ -31,7 +31,7 @@ const projects = [
   },
   {
     title: "CICAF École",
-    image: AcceuilEcole,
+    image: Acceuilecole,
     link: "https://cicafecole.netlify.app",
     description:
       "Application métier complète pour la gestion scolaire de CICAF. Système intégré avec gestion des étudiants, notes, emploi du temps, communication parents-enseignants, et tableau de bord administratif pour un suivi pédagogique efficace.",
@@ -52,28 +52,28 @@ const projects = [
   },
   {
     title: "Portfolio",
-    image: PortfolioImg,
+    image: Porfolio4,
     link: "https://galileokazadidev.netlify.app",
     description:
       "Mon propre portfolio a été pensé comme une vitrine de mes compétences et de mes réalisations...",
   },
   {
     title: "E-Reservations",
-    image: KatGlamour,
+    image: Katglamours,
     link: "https://katglam.netlify.app",
     description:
       "Enfin, j'ai développé un site de réservation pour un institut de beauté...",
   },
   {
     title: "Namster",
-    image: NamsterImg,
+    image: Namster,
     link: "https://naminsert.netlify.app/",
     description:
       "Namster automatise l'ajout des noms sur les invitations. Téléversez votre modèle, importez une liste de noms et générez en masse des invitations personnalisées, prêtes à l'impression en quelques secondes.",
   },
   {
     title: "Namster Premium",
-    image: namsterPrim,
+    image: NamsterPrim,
     link: "https://namster.netlify.app",
     description:
       "Version premium de Namster avec fonctionnalités avancées : templates personnalisables, intégration API, traitement par lots illimité, et support prioritaire pour les événements de grande envergure.",
@@ -87,35 +87,35 @@ const projects = [
   },
   {
     title: "EvaneLesnarPortfolio",
-    image: EvaneLesnar,
+    image: PortfolioEvane,
     link: "https://evanelesnar.netlify.app/",
     description:
       "Un portfolio retraçant en détail le parcours complet de l'artiste humouriste Evane Lesnar.",
   },
   {
     title: "Better Life DRC site Officiel",
-    image: Betterlife,
+    image: BetterlifeImage,
     link: "https://betterlife-ong.netlify.app",
     description:
       "Le site Officiel d'un organisme internationale de production et securité alimentaire.",
   },
   {
     title: "Jeune Ballon Rêves",
-    image: JBREImg,
+    image: JBR,
     link: "https://jeuneballonreves.netlify.app/",
     description:
       "Une plateforme dédiée à la promotion et au développement du jeune talent footballistique. JBR accompagne les jeunes athlètes dans leur parcours professionnel avec des programmes de formation, de suivi et d'opportunités de carrière.",
   },
   {
     title: "Talent RDC Connect",
-    image: TRCImg,
+    image: TRC,
     link: "https://talentrdcconnect.netlify.app/",
     description:
       "Talent RDC Connect est une plateforme innovante qui met en relation les talents congolais avec les opportunités professionnelles. Un pont entre les compétences locales et les besoins du marché mondial.",
   },
   {
     title: "Shek Mployi Portfolio",
-    image: ShekPortfolioImg,
+    image: ShekPortfolio,
     link: "https://shekmpoyi.netlify.app",
     description:
       "Portfolio professionnel présentant l'univers créatif et les réalisations de Shek Mployi. Une vitrine élégante mettant en valeur son expertise artistique et sa vision unique du design.",

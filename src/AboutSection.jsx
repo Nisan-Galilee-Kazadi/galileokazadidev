@@ -7,7 +7,7 @@ import { SubTitle } from "./App";
 import { Section } from "./App";
 import { CoverText } from "./App";
 import { IntroText } from "./App";
-import BigIcon from "./images/big-icon.png";
+import BigIcon from "./images/big-icon.webp";
 
 const AboutSection = ({ darkMode }) => {
   const imageRef = useRef(null);

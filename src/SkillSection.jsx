@@ -3,21 +3,21 @@ import "./animations.css";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Span, P, SubTitle, Section, CoverText, IntroText } from "./App";
-import Html from "./images/html.png";
-import Css from "./images/css.png";
-import Javascript from "./images/javascript.png";
-import React from "./images/react.png";
-import Tailwind from "./images/tailwindcss.png";
-import Node from "./images/nodejs.png";
-import MongoDB from "./images/mongodb.png";
-import Postgres from "./images/postgresql.png";
-import Mysql from "./images/mysql.png";
-import ZohoMail from "./images/Zoho-Mail.png";
-import github from "./images/github.jpg";
-import cpanel from "./images/cpanel.png";
-import netlify from "./images/netlify.png";
-import vercel from "./images/vercel.png";
-import render from "./images/render.png";
+import Html from "./images/html.webp";
+import Css from "./images/css.webp";
+import Javascript from "./images/javascript.webp";
+import React from "./images/react.webp";
+import Tailwind from "./images/tailwindcss.webp";
+import Node from "./images/nodejs.webp";
+import MongoDB from "./images/mongodb.webp";
+import Postgres from "./images/postgresql.webp";
+import Mysql from "./images/mysql.webp";
+import ZohoMail from "./images/Zoho-Mail.webp";
+import GitHub from "./images/github.webp";
+import cpanel from "./images/cpanel.webp";
+import netlify from "./images/netlify.webp";
+import vercel from "./images/vercel.webp";
+import render from "./images/render.webp";
 
 const StackCard = ({ children }) => {
   return (
@@ -60,7 +60,7 @@ const SkillSection = ({ darkMode }) => {
     { name: 'React', icon: React },
     { name: 'Tailwind', icon: Tailwind },
     { name: 'Node.js', icon: Node },
-    { name: 'GitHub', icon: github },
+    { name: 'GitHub', icon: GitHub },
     { name: 'MongoDB', icon: MongoDB },
     { name: 'PostgreSQL', icon: Postgres },
     { name: 'MySQL', icon: Mysql },
