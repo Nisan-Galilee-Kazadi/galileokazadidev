@@ -77,6 +77,33 @@ function ContactSection({ darkMode }) {
             mesure,performanrte et evolutive. Puisque votre projet mérite une
             présence en ligne à la hauteur de vos ambitions !
           </p>
+          {/* Animated icons moving from bottom to top in varied positions - 50% width */}
+          <div className="hidden md:block mt-8 relative w-1/2 h-32 overflow-hidden mx-auto">
+            <div className="absolute bottom-0 left-0 animate-float-up-slow">
+              <i className="fas fa-envelope-open-text text-3xl text-[#c9f31d] opacity-80"></i>
+            </div>
+            <div className="absolute bottom-0 left-1/4 animate-float-up-medium">
+              <i className="fas fa-phone-alt text-2xl text-[#c9f31d] opacity-80"></i>
+            </div>
+            <div className="absolute bottom-0 left-1/2 animate-float-up-fast">
+              <i className="fas fa-paper-plane text-3xl text-[#c9f31d] opacity-80"></i>
+            </div>
+            <div className="absolute bottom-0 left-3/4 animate-float-up-slow">
+              <i className="fas fa-comments text-2xl text-[#c9f31d] opacity-80"></i>
+            </div>
+            <div className="absolute bottom-0 left-1/6 animate-float-up-medium">
+              <i className="fas fa-at text-2xl text-[#c9f31d] opacity-80"></i>
+            </div>
+            <div className="absolute bottom-0 left-2/3 animate-float-up-fast">
+              <i className="fas fa-mail-bulk text-3xl text-[#c9f31d] opacity-80"></i>
+            </div>
+            <div className="absolute bottom-0 left-5/6 animate-float-up-slow">
+              <i className="fas fa-message text-2xl text-[#c9f31d] opacity-80"></i>
+            </div>
+            <div className="absolute bottom-0 left-1/3 animate-float-up-medium">
+              <i className="fas fa-inbox text-3xl text-[#c9f31d] opacity-80"></i>
+            </div>
+          </div>
           {/* <div className="devCompetence mt-6 space-y-2">
             <p>
               <i className="fas fas fa-check-circle"></i> 1+ Années d'expérience
@@ -93,16 +120,7 @@ function ContactSection({ darkMode }) {
             </p>
           </div> */}
         </div>
-        <div className="w-full pt-0 md:pt-0 flex-1 flex items-center justify-center relative">
-          {/* Multiple animated icons for desktop */}
-          <div className="hidden md:block absolute -left-32 top-1/2 transform -translate-y-1/2 space-y-8">
-            <div className="flex flex-col items-center space-y-6">
-              <i className="fas fa-envelope-open-text text-5xl text-[#c9f31d] animate-spin-zoom"></i>
-              <i className="fas fa-phone-alt text-4xl text-[#c9f31d] animate-spin-zoom-delayed"></i>
-              <i className="fas fa-paper-plane text-4xl text-[#c9f31d] animate-spin-zoom-reverse"></i>
-              <i className="fas fa-comments text-3xl text-[#c9f31d] animate-spin-zoom"></i>
-            </div>
-          </div>
+        <div className="w-full pt-0 md:pt-0 flex-1 flex items-center justify-center">
           <form
             ref={formRef}
             onSubmit={handleSubmit}

@@ -3,6 +3,7 @@ import "./animations.css";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Span, P, SubTitle, Section, CoverText, IntroText } from "./App";
+import clsx from "clsx";
 import Html from "./images/html.webp";
 import Css from "./images/css.webp";
 import Javascript from "./images/javascript.webp";
@@ -17,11 +18,11 @@ import GitHub from "./images/github.webp";
 import cpanel from "./images/cpanel.webp";
 import netlify from "./images/netlify.webp";
 import vercel from "./images/vercel.webp";
-import render from "./images/render.webp";
+import render from "./images/render.png";
 
 const StackCard = ({ children }) => {
   return (
-    <div className="bg-black flex-shrink-0 flex flex-col gap-1.5 items-center justify-between border-2 max-h-80 w-36 md:w-auto md:min-w-38 px-4 py-5 border-[#4c4c4c] rounded-[10px] p-4 hover:border-[#c9f31d] transition-all duration-300 hover:shadow-lg hover:shadow-[#c9f31d20] group">
+    <div className={clsx('bg-black', 'flex-shrink-0', 'flex', 'flex-col', 'gap-1.5', 'items-center', 'justify-between', 'border-2', 'max-h-80', 'w-36', 'md:w-auto', 'md:min-w-38', 'px-4', 'py-5', 'border-[#4c4c4c]', 'rounded-[10px]', 'p-4', 'hover:border-[#c9f31d]', 'transition-all', 'duration-300', 'hover:shadow-lg', 'hover:shadow-[#c9f31d20]', 'group')}>
       {children}
     </div>
   );
@@ -29,7 +30,7 @@ const StackCard = ({ children }) => {
 
 const InfiniteScrollRow = ({ children, direction = 'left', speed = '40s' }) => {
   return (
-    <div className="overflow-hidden w-full py-4">
+    <div className={clsx('overflow-hidden', 'w-full', 'py-4')}>
       <div 
         className={`flex gap-4 w-max ${direction === 'left' ? 'animate-scroll-left' : 'animate-scroll-right'}`}
         style={{ '--speed': speed }}
@@ -43,7 +44,7 @@ const InfiniteScrollRow = ({ children, direction = 'left', speed = '40s' }) => {
 
 export function H5({ children }) {
   return (
-    <h5 className="text-white font-bold bg-[#80808030] w-full text-center p-1">
+    <h5 className={clsx('text-white', 'font-bold', 'bg-[#80808030]', 'w-full', 'text-center', 'p-1')}>
       {children}
     </h5>
   );
@@ -108,23 +109,23 @@ const SkillSection = ({ darkMode }) => {
     <Section
       margin={"-150px"}
       id="skills"
-      className="bg-black text-white px-0"
+      className={clsx('bg-black', 'text-white', 'px-0')}
       darkMode={darkMode}
     >
       <motion.div 
         ref={containerRef} 
-        className="flex flex-col gap-10 max-w-5xl mx-auto px-2 md:px-6"
+        className={clsx('flex', 'flex-col', 'gap-10', 'max-w-5xl', 'mx-auto', 'px-2', 'md:px-6')}
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
-        <div className="flex flex-col gap-5">
+        <div className={clsx('flex', 'flex-col', 'gap-5')}>
           <SubTitle>
-            <span className="text-2xl md:text-4xl">Mes Compétences</span>
+            <span className={clsx('text-2xl', 'md:text-4xl')}>Mes Compétences</span>
           </SubTitle>
           <CoverText margin={"-70px"}>Compétences</CoverText>
           <IntroText>
-            <span className="text-lg md:text-2xl">
+            <span className={clsx('text-lg', 'md:text-2xl')}>
               Explorons ensemble mes{" "}
               <Span color={"#c9f31d"}>Compétences & Stack</Span>
             </span>
@@ -140,7 +141,7 @@ const SkillSection = ({ darkMode }) => {
         </div>
 
         {/* Version desktop - Grille normale */}
-        <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 mt-10">
+        <div className={clsx('hidden', 'md:grid', 'grid-cols-2', 'lg:grid-cols-4', 'xl:grid-cols-5', 'gap-6', 'mt-10')}>
           {stacks.map((skill, index) => (
             <motion.div
               key={skill.name}
@@ -151,7 +152,7 @@ const SkillSection = ({ darkMode }) => {
                 <img 
                   src={skill.icon} 
                   alt={skill.name} 
-                  className="w-12 h-12 object-contain" 
+                  className={clsx('w-12', 'h-12', 'object-contain')} 
                   loading="lazy"
                 />
                 <H5>{skill.name}</H5>
@@ -161,14 +162,14 @@ const SkillSection = ({ darkMode }) => {
         </div>
 
         {/* Version mobile - Défilement infini */}
-        <div className="md:hidden space-y-4">
+        <div className={clsx('md:hidden', 'space-y-4')}>
           <InfiniteScrollRow direction="left">
             {doubleStacks.map((skill, index) => (
               <StackCard key={`left-${index}`}>
                 <img 
                   src={skill.icon} 
                   alt={skill.name} 
-                  className="w-12 h-12 object-contain"
+                  className={clsx('w-12', 'h-12', 'object-contain')}
                   loading="lazy"
                 />
                 <H5>{skill.name}</H5>
@@ -182,7 +183,7 @@ const SkillSection = ({ darkMode }) => {
                 <img 
                   src={skill.icon} 
                   alt={skill.name} 
-                  className="w-12 h-12 object-contain"
+                  className={clsx('w-12', 'h-12', 'object-contain')}
                   loading="lazy"
                 />
                 <H5>{skill.name}</H5>
