@@ -114,6 +114,13 @@ const projects = [
       "Talent RDC Connect est une plateforme innovante qui met en relation les talents congolais avec les opportunités professionnelles. Un pont entre les compétences locales et les besoins du marché mondial.",
   },
   {
+    title: "Ma lecture de la Bible",
+    image: "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?q=80&w=2070&auto=format&fit=crop",
+    link: "https://ma-lecture-bible-landing.netlify.app",
+    description:
+      "Une application mobile et web complète pour la lecture en 368 jours améliorée. Elle propose un plan de lecture structuré, un système de prise de notes sécurisé, et l'intégration automatique du texte du jour via WOL. L'interface est optimisée pour une expérience sereine et sans distraction.",
+  },
+  {
     title: "Shek Mployi Portfolio",
     image: ShekPortfolio,
     link: "https://shekmpoyi.netlify.app",
@@ -138,17 +145,17 @@ function ProjectCarousel() {
         slidesPerView={1}
         breakpoints={{
           // Mobile
-          320: { 
+          320: {
             slidesPerView: 1,
             spaceBetween: 16
           },
           // Tablette
-          640: { 
+          640: {
             slidesPerView: 1.5,
             spaceBetween: 20
           },
           // Desktop (à partir de 1024px)
-          1024: { 
+          1024: {
             slidesPerView: 2,
             spaceBetween: 32,
             loop: projects.length > 2
@@ -179,9 +186,8 @@ function ProjectCarousel() {
                   : "Voir plus de détails"}
               </button>
               <div
-                className={`transition-all duration-500 overflow-hidden bg-[#181818] px-6 pb-4 ${
-                  openDetail === idx ? "max-h-96 py-4" : "max-h-0 py-0"
-                }`}
+                className={`transition-all duration-500 overflow-hidden bg-[#181818] px-6 pb-4 ${openDetail === idx ? "max-h-96 py-4" : "max-h-0 py-0"
+                  }`}
               >
                 <p className="pt-3 text-white text-base md:text-lg">
                   {project.description}
