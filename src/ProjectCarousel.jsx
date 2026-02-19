@@ -116,7 +116,7 @@ const projects = [
   {
     title: "Ma lecture de la Bible",
     image: "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?q=80&w=2070&auto=format&fit=crop",
-    link: "https://ma-lecture-bible-landing.netlify.app",
+    link: "https://ma-lecture-de-la-bible.netlify.app/",
     description:
       "Une application mobile et web complète pour la lecture en 368 jours améliorée. Elle propose un plan de lecture structuré, un système de prise de notes sécurisé, et l'intégration automatique du texte du jour via WOL. L'interface est optimisée pour une expérience sereine et sans distraction.",
   },
